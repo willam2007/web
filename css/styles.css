@@ -1,0 +1,89 @@
+/* styles.css */
+body {
+    background-image: url('../img/background.jpg'); 
+    background-size: cover; /* Растягивать изображение, чтобы оно полностью покрывало фон */
+    background-repeat: no-repeat; /* Не повторять изображение */
+    background-attachment: fixed; /* Зафиксировать фон, чтобы он не прокручивался вместе с контентом */
+    font-family: "Font Awesome 5 Pro"; /* Установка шрифта для всего текста, взял с lolz forum*/
+    color: #f5f5f5; 
+    margin: 0; /*вроде как отступы*/
+    padding: 0; 
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+    color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+/* наши категории фото видео аудео*/
+aside a {
+    text-decoration: none;
+    color: #83fd8b;
+}
+/* наша фотогалерея*/
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-item {
+    width: 200px; /* Фиксированная ширина фотографии */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+/* меню контакты */
+.contact-table {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%; /* Ширина таблицы */
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid #333; /* Грани таблицы */
+}
+
+th, td {
+    padding: 10px; /* Внутренний отступ ячеек */
+}
